@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.header {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.header-info {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-descr {
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.navbar {
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    padding: 7px;
+    color: #3A3838;
+    transition: color 0.6s ease;
+    font-weight: 700;
+}
+
+.link:hover {
+    color: #EF4423
+}
+
+.active {
+    color: #EF4423
+}
+
+/* ------------------MAIN-------------------- */
+.main-content {
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.column {
+    color: #FFFFFF;
+    font-family: Roboto;
+}
+
+.column p {
+    font-weight: bold;
+}
+
+.column1 {
+    background-color: #B71C1C;
+}
+
+.column2 {
+    background-color: #6A1B9A;
+}
+
+.column3 {
+    background-color: #303F9F;
+}
+
+.column4 {
+    background-color: #00695C;
+}
+
+.column1-info,
+.column2-info,
+.column3-info,
+.column4-info {
+    margin: 10px;
+    font-size: 19px;
+}
+
+.mini-info {
+    padding-top: 12px;
+    font-size: 16px;
+}
+
+.column-img img {
+    width: 100%;
+    display: flex;
+}
+
+.main-new-title {
+    height: 100px;
+    font-family: Roboto;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.main-new-img img{
+    height: 100%;
+}
+
+.main-news {
+    background-color: #EDEDED;
+    margin: 0 auto;
+}
+
+.main-new {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+}
+
+.main-new-head {
+    font-size: 22px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.main-new-descr {
+    font-family: Roboto;
+    font-size: 17px;
+}
+
+.main-new-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 25px;
+}
+
+.column2,
+.column4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* -------------FOOTER----------------- */
+.footer {
+    background-color: #3A3838;
+}
+
+.footer-info {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 29px 0;
+}
+
+.footer .link {
+    color: #FFFFFF;
+    transition: color 0.6s ease;
+}
+
+.footer .link:hover {
+    color: #EF4423
+}
+
+.footer-logo-descr {
+    display: block;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.footer-navbar {
+    display: flex;
+}
+
+.main-new-content {
+    display: block;
+}
+
+/* ------------------MEDIA-------------------------- */
+@media(max-width: 1110px) {
+    .main-content {
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .background img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .main-new {
+        flex-wrap: wrap;
+    }
+
+    .main-new-img,
+    .main-new-img img {
+        width: 100%;
+    }
+
+    .main-new-descr {
+        margin-bottom: 15px;
+    }
+    .main-new-head{
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 840px) {
+    .header-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-new-descr {
+        font-size: 15px;
+    }
+    .main-new-head{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 685px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
